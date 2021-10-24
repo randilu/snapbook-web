@@ -1,0 +1,27 @@
+.brand-name-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 1.5rem;
+
+  span {
+    margin-top: 0.5rem;
+  }
+}
+.navigation-container {
+  grid-column: 3;
+  display: flex;
+  grid-gap: 1em;
+  gap: 1em;
+  align-items: center;
+  color: white;
+  font-family: monospace;
+
+  .navigation-link {
+    all: unset;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+}

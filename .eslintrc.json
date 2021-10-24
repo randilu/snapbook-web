@@ -1,0 +1,52 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "consistent-return": "off",
+    "no-unused-vars":"warn",
+    "no-console": "warn",
+    "max-len": 0,
+    "no-use-before-define": 0,
+    "import/no-unresolved": 0,
+    "import/no-absolute-path": 0,
+    "import/extensions": 0,
+    "react/prop-types": 0,
+    "react/no-unused-state": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/jsx-closing-bracket-location": [2, "after-props"],
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-props-no-spreading": [
+      2,
+      {
+        "html": "ignore",
+        "exceptions": ["Label"]
+      }
+    ],
+    "jsx-a11y/control-has-associated-label": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "react/no-array-index-key": 0,
+    "no-shadow": 0,
+    "no-unused-expressions" :1,
+    "no-underscore-dangle": 1
+  }
+}

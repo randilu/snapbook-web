@@ -1,0 +1,57 @@
+.album-grid-container {
+  display: grid;
+  grid-row: 2 / 3;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-auto-rows: 1fr;
+  overflow-y: scroll;
+  max-height: calc(100vh - 110px);
+  gap: 10px;
+  padding: 20px;
+
+  .album-grid-item-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-column-start: 2;
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .album-grid-container {
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .album-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .album-grid-container {
+    grid-template-columns: 1fr;
+    .album-grid-item-container {
+      grid-template-columns: 1fr 1fr;
+      grid-column-start: 1;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .album-grid-container {
+    grid-template-columns: 1fr;
+    .album-grid-item-container {
+      grid-template-columns: 1fr;
+      grid-column-start: 1;
+    }
+  }
+}
+
+.album-empty-container {
+    color: rgb(97, 96, 96);
+    background-color: rgb(223, 221, 221);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}

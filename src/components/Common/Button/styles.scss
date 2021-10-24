@@ -1,0 +1,23 @@
+.button {
+  background-color: white;
+  color: black;
+  width: 150px;
+  height: 60px;
+  border-radius: 13px;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.button:disabled {
+  color: rgb(97, 96, 96);
+  background-color: rgb(223, 221, 221);
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    height: fit-content;
+    width: fit-content;
+    font-size: 0.8rem;
+  }
+}
